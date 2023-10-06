@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>File Upload</title>
+</head>
+<body>
+<h2>This file uploaded</h2>
+</body>
+</html>
