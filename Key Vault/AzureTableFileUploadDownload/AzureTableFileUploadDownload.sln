@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTableFileUploadDownload", "AzureTableFileUploadDownload\AzureTableFileUploadDownload.csproj", "{3A8FA7B8-F0CA-402E-AB2C-7812CE60016C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A8FA7B8-F0CA-402E-AB2C-7812CE60016C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8FA7B8-F0CA-402E-AB2C-7812CE60016C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8FA7B8-F0CA-402E-AB2C-7812CE60016C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8FA7B8-F0CA-402E-AB2C-7812CE60016C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {790B5768-839E-4719-A2DD-F0E13FD296FE}
+	EndGlobalSection
+EndGlobal

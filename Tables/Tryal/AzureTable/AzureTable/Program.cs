@@ -1,7 +1,7 @@
 ﻿using Microsoft.Azure.Cosmos.Table;
 using System;
 
-namespace AzureTable
+namespace AddEntityToTheTable
 {
     class Program
     {
@@ -21,7 +21,7 @@ namespace AzureTable
             {
                 new Customer("UserB", "Chicago", "C2"),
                 new Customer("UserC", "Chicago", "C3"),
-                new Customer("UserD", "Chicago", "C4")
+                new Customer("UserD", "Chicago", "C4"),
             };
 
             TableBatchOperation _operation = new TableBatchOperation();

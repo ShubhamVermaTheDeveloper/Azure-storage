@@ -1,0 +1,52 @@
+﻿@model IEnumerable<AzureTableFileUploadDownload.Models.FileModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@{
+    if (TempData["insert_message"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success</strong> @TempData["insert_message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    if (TempData["delete_message"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success</strong> @TempData["delete_message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+}
+<p>
+    <a asp-action="Create" class="btn btn-info">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                    <a href="data:application/octet-stream;base64,@Convert.ToBase64String(item.FileData)" class="btn btn-primary" download="@item.FileName">Download File</a> |
+
+                    @Html.ActionLink("Delete", "Delete", new { RowKey = item.RowKey },new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
