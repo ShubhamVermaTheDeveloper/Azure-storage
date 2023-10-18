@@ -16,7 +16,7 @@ namespace FunctionAppDemoForBinding
         [FunctionName("Function1")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Admin, "get", "post", Route = null)] HttpRequest req,
-            [Queue("outputqueue"), StorageAccount("AzureWebJobsStorage")] ICollector<String> msg,
+            [Queue("FunctionAppDemoQueue"), StorageAccount("AzureWebJobsStorage")] ICollector<String> msg,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");

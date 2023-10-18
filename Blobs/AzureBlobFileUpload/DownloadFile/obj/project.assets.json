@@ -506,11 +506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\Azure Storage\\AzureBlobFileUpload\\DownloadFile\\DownloadFile.csproj",
+      "projectUniqueName": "C:\\Github\\Azure Storage\\Blobs\\AzureBlobFileUpload\\DownloadFile\\DownloadFile.csproj",
       "projectName": "DownloadFile",
-      "projectPath": "C:\\Github\\Azure Storage\\AzureBlobFileUpload\\DownloadFile\\DownloadFile.csproj",
+      "projectPath": "C:\\Github\\Azure Storage\\Blobs\\AzureBlobFileUpload\\DownloadFile\\DownloadFile.csproj",
       "packagesPath": "C:\\Users\\ShubhamVerma\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\Azure Storage\\AzureBlobFileUpload\\DownloadFile\\obj\\",
+      "outputPath": "C:\\Github\\Azure Storage\\Blobs\\AzureBlobFileUpload\\DownloadFile\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ShubhamVerma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -560,7 +560,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
