@@ -40,6 +40,8 @@ namespace SqlTriggerBindingYoutubeGeekFest
         }
 
 
+
+
         [FunctionName("get-todos")]
         public static IActionResult Get(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "todos/{id:guid?}")] HttpRequest req,
