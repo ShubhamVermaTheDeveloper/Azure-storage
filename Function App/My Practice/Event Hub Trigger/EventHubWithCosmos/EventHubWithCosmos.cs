@@ -39,6 +39,7 @@ namespace EventHubWithCosmos
         }
 
 
+      
         [FunctionName("ProcessEvent")]
         public static void ProcessEvent(
         [EventHubTrigger("cosmosdata", Connection = "EventHubConnectionstring")] string message,
