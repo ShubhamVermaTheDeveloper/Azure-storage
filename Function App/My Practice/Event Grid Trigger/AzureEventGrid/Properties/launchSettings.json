@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "EventGridTriggerDemo1": {
+    "AzureEventGrid": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7291",
+      "commandLineArgs": "--port 7114",
       "launchBrowser": false
     }
   }
