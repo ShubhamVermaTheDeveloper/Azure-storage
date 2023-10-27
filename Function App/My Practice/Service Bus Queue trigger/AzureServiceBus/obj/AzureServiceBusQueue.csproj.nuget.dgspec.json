@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Github\\Azure Storage\\Tables\\Final Task\\AzureTableFileUploadDownload\\AzureTableFileUploadDownload\\AzureTableFileUploadDownload.csproj": {}
+    "C:\\Github\\Azure Storage\\Function App\\My Practice\\Service Bus Queue trigger\\AzureServiceBus\\AzureServiceBusQueue.csproj": {}
   },
   "projects": {
-    "C:\\Github\\Azure Storage\\Tables\\Final Task\\AzureTableFileUploadDownload\\AzureTableFileUploadDownload\\AzureTableFileUploadDownload.csproj": {
+    "C:\\Github\\Azure Storage\\Function App\\My Practice\\Service Bus Queue trigger\\AzureServiceBus\\AzureServiceBusQueue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Github\\Azure Storage\\Tables\\Final Task\\AzureTableFileUploadDownload\\AzureTableFileUploadDownload\\AzureTableFileUploadDownload.csproj",
-        "projectName": "AzureTableFileUploadDownload",
-        "projectPath": "C:\\Github\\Azure Storage\\Tables\\Final Task\\AzureTableFileUploadDownload\\AzureTableFileUploadDownload\\AzureTableFileUploadDownload.csproj",
+        "projectUniqueName": "C:\\Github\\Azure Storage\\Function App\\My Practice\\Service Bus Queue trigger\\AzureServiceBus\\AzureServiceBusQueue.csproj",
+        "projectName": "AzureServiceBusQueue",
+        "projectPath": "C:\\Github\\Azure Storage\\Function App\\My Practice\\Service Bus Queue trigger\\AzureServiceBus\\AzureServiceBusQueue.csproj",
         "packagesPath": "C:\\Users\\ShubhamVerma\\.nuget\\packages\\",
-        "outputPath": "C:\\Github\\Azure Storage\\Tables\\Final Task\\AzureTableFileUploadDownload\\AzureTableFileUploadDownload\\obj\\",
+        "outputPath": "C:\\Github\\Azure Storage\\Function App\\My Practice\\Service Bus Queue trigger\\AzureServiceBus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ShubhamVerma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,13 +40,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Azure.Data.Tables": {
+            "Azure.Messaging.ServiceBus": {
               "target": "Package",
-              "version": "[12.8.1, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[6.0.16, )"
+              "version": "[7.16.2, )"
             }
           },
           "imports": [
@@ -61,9 +57,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
