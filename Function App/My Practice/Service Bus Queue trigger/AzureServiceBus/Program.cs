@@ -6,13 +6,13 @@ namespace AzureServiceBusQueue
 {
     class Program
     {
-        private static string connection_string = "Endpoint=sb://appnamespace1000.servicebus.windows.net/;SharedAccessKeyName=accesskey;SharedAccessKey=xCHZjUIMG99N8/Gj1bn4REIUXvTnfYPKW+ASbLNW7KI=;EntityPath=appqueue";
+        private static string connection_string = "Endpoint=sb://appnamespace1000.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=2F5HlXRnzA+Ohp/3NdC+qa1Xy/Brnhu9i+ASbOL2b+8=";
         private static string queue_name = "appqueue";
         static void Main(string[] args)
         {
-            //SendMessage();
+            SendMessage();
             //GetPeekMessages();
-            DeletePeekMessages();
+            //DeletePeekMessages();
 
             Console.ReadKey();
         }
@@ -56,7 +56,7 @@ namespace AzureServiceBusQueue
             ServiceBusClient _client = new ServiceBusClient(connection_string);
             ServiceBusReceiver _reciever = _client.CreateReceiver(queue_name, new ServiceBusReceiverOptions() { ReceiveMode = ServiceBusReceiveMode.ReceiveAndDelete });
 
-            var _messages = _reciever.ReceiveMessagesAsync(3).GetAwaiter().GetResult();
+            var _messages = _reciever.ReceiveMessagesAsync(1).GetAwaiter().GetResult();
 
 
             foreach(var _message in _messages)
@@ -64,7 +64,6 @@ namespace AzureServiceBusQueue
                 Console.WriteLine(_message.SequenceNumber);
                 Console.WriteLine(_message.Body.ToString());
             }
-
 
             Console.ReadKey();
         }
